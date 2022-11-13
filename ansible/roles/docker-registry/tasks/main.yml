@@ -9,6 +9,7 @@
   docker_image:
     name: myapp:latest
     repository: hazar123/devops
+    source: local
     tag: end
     push: yes
 
