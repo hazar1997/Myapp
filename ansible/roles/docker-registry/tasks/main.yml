@@ -1,0 +1,14 @@
+---
+# tasks file for docker-registry
+- name: Log into DockerHub
+  docker_login:
+    username: hazar123
+    password: 204JMT1713
+
+- name: Tag and push to docker hub
+  docker_image:
+    name: myapp:latest
+    repository: hazar123/devops
+    tag: end
+    push: yes
+
